@@ -6,3 +6,8 @@
 
 if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">discord</a>
 
+you want to use it!
+```
+pip install -r requirements.txt
+```
+
