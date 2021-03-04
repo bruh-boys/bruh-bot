@@ -1,4 +1,4 @@
-<title>bruh-bot</title>
+bruh-bot
 
 <h1>it sends you spam via sms using two tools, quack and impulse</h1>
 
