@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from monda import SI
+from monda import SI # SI its the token
 import datetime
 import os
 
