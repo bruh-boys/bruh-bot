@@ -1,6 +1,10 @@
 <h1>bruh-bot</h1>
 
-<img src="https://media.discordapp.net/attachments/809999884820021252/817080820132478996/unknown.png">
+send spam sms!
+<img src="https://media.discordapp.net/attachments/817228555258953738/817377441748221952/unknown.png">
+
+send spam with email!
+<img src="https://media.discordapp.net/attachments/817228555258953738/817377305051529216/unknown.png">
 
 <h3>it sends you spam via sms using two tools, quack and impulse,the bot still has a few bugs, as it can only attack once every 5 minutes, and i need  to check the numbers</h3>
 
