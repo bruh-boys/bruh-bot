@@ -5,6 +5,7 @@ import json
 from colorama import Fore
 from getpass import getpass, getuser
 from smtplib import SMTPAuthenticationError, SMTP
+from monda import SI2
 # https://github.com/LimerBoy/Twilight-Algoritm
 from tools.addons.twilight.twilight import Decrypt, Encrypt
 
@@ -19,8 +20,8 @@ smtp_port = 587
 
 
 def WriteSenderEmail():
-    username = input(f"{Fore.BLUE}[?] {Fore.MAGENTA}Please enter your gmail address from which messages will be sent: {Fore.BLUE}")
-    password = getpass(f"{Fore.BLUE}[?] {Fore.MAGENTA}Please enter your gmail password: {Fore.BLUE}")
+    username = "peojediondo3@gmail.com"
+    password = SI2
     server = SMTP(smtp_server, smtp_port)
     server.ehlo()
     server.starttls()
@@ -39,9 +40,9 @@ def WriteSenderEmail():
         )
 
     # Saved data to db?
-    confirm = input(f"{Fore.BLUE}[?] {Fore.MAGENTA}Should this information be retained for future reference? (y/n) : {Fore.BLUE}")
-    confirm = confirm.upper() in ("Y", "YES", "1", "TRUE")
-    if confirm:
+    #confirm = input(f"{Fore.BLUE}[?] {Fore.MAGENTA}Should this information be retained for future reference? (y/n) : {Fore.BLUE}")
+    #confirm = confirm.upper() in ("Y", "YES", "1", "TRUE")
+    #if confirm:
         # Write database
         with open(sender_email_database, "w") as db:
             json.dump(
