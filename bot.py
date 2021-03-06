@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='*', description="Test bot")
 # Event
 @bot.event
 async def on_ready():
-   await bot.change_presence(activity=discord.Streaming(name="*info"))
+   await bot.change_presence(activity=discord.Game(name="*info"))
    print("\033[4;35m"+"bot on")
 
 
