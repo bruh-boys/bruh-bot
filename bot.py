@@ -28,7 +28,7 @@ SMS: *sms +573221243431""", color=0x00ff00)
 async def sms(ctx,arg):
 
      validate = re.findall("\+?[\d]{10,14}", arg)
-	if not validate:
+     if not validate:
 	    embed10 = discord.Embed(title ="you didn't pass with a +, or is not a number, or did you pass it with spaces, example: *sms +22123456789", color=0x00ff01)
 	    await ctx.send(embed=embed10)
 	    return
