@@ -11,7 +11,6 @@
 if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">discord</a>
 
 you want to use it!
-```
-pip3 install -r requirements.txt
-```
 
+## 👏 Add bruh-bot to your Discord Server
+**To start using bruh-bot [just click on this link](https://discord.com/api/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot) and add it to your server!**
