@@ -12,6 +12,6 @@ if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">disc
 
 you want to use it!
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
