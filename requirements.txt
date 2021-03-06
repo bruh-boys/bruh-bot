@@ -1,4 +1,11 @@
 requests
+codecov
+gitpython
+pre-commit
+pytest
+pytest-cov
+pyyaml
+quack
 wget
 argparse
 colorama
@@ -6,4 +13,3 @@ humanfriendly
 phonenumbers
 scapy
 discord.py==1.6.0
-

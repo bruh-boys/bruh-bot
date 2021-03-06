@@ -56,8 +56,8 @@ def __GetURLInfo(target):
 
 def __GetEmailMessage():
     server, username = ReadSenderEmail()
-    subject = input(f"{Fore.BLUE}[?] {Fore.MAGENTA}Enter the Subject (leave blank for random value): ")
-    body = input(f"{Fore.BLUE}[?] {Fore.MAGENTA}Enter Your Message (leave blank for random value): ")
+    subject = "some thing"
+    body = "some thing"
     return [server, username, subject, body]
 
 """ Return target """
