@@ -3,6 +3,7 @@ import os
 import sys
 import json
 from colorama import Fore
+from accounts import *
 from getpass import getpass, getuser
 from smtplib import SMTPAuthenticationError, SMTP
 from monda import SI2
@@ -20,8 +21,8 @@ smtp_port = 587
 
 
 def WriteSenderEmail():
-    username = "peojediondo3@gmail.com"
-    password = SI2
+    username = selectRandom(accounts)  # select a random account
+    password = p
     server = SMTP(smtp_server, smtp_port)
     server.ehlo()
     server.starttls()
