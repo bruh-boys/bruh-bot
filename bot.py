@@ -1,9 +1,8 @@
 import discord
 from discord.ext import commands
-from monda import SI
+from accounts import SI
 import datetime
 import os
-import time
 import re
 
 bot = commands.Bot(command_prefix='*', description="Test bot")
@@ -43,10 +42,13 @@ async def sms(ctx,arg):
 async def email(ctx,arg):
     embed4 = discord.Embed(title ="spam sent! takes 1 minute ", color=000000)
     await ctx.send(embed=embed4)
-    time.sleep(6)
+    os.system("rm tools/EMAIL/sender.json")
     os.system(f"python3 impulse.py --method EMAIL --time 60 --target {arg}")
     embed5 = discord.Embed(title =" email spam completed!", color=0x00ff00, timestamp=datetime.datetime.utcnow())
     await ctx.send(embed=embed5)
 
       
 bot.run(SI)
+
+
+
