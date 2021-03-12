@@ -6,7 +6,6 @@ from colorama import Fore
 from accounts import *
 from getpass import getpass, getuser
 from smtplib import SMTPAuthenticationError, SMTP
-from monda import SI2
 # https://github.com/LimerBoy/Twilight-Algoritm
 from tools.addons.twilight.twilight import Decrypt, Encrypt
 
