@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from accounts import SI
+from accounts import SI # SI its the token
 import datetime
 import os
 import re
