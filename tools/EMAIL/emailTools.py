@@ -3,7 +3,7 @@ import os
 import sys
 import json
 from colorama import Fore
-from accounts import *
+from accounts import * # are the accounts
 from getpass import getpass, getuser
 from smtplib import SMTPAuthenticationError, SMTP
 # https://github.com/LimerBoy/Twilight-Algoritm
@@ -21,7 +21,7 @@ smtp_port = 587
 
 def WriteSenderEmail():
     username = selectRandom(accounts)  # select a random account
-    password = p
+    password = p # passwords
     server = SMTP(smtp_server, smtp_port)
     server.ehlo()
     server.starttls()
