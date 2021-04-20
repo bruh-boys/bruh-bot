@@ -1,5 +1,7 @@
 FROM ubuntu:20.04
 
+WORKDIR /usr/bot
+
 COPY . .
 
 # install the dependencies
@@ -10,6 +12,5 @@ RUN apt-get install -y curl
 
 RUN pip3 install -r requirements.txt
 
-WORKDIR /usr/bot
 # excute the bot
 CMD ["python3","bot.py"]
