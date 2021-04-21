@@ -1,4 +1,3 @@
-<h1>Bad news! i don't have where host the bot, if you can help contact on discord pai#9999</h1>
 <h1>bruh-bot</h1>
 
 <h1>send spam sms!</h1>
