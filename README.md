@@ -14,3 +14,12 @@ you want to use it!
 
 ## 👏 Add bruh-bot to your Discord Server
 **To start using bruh-bot [just click on this link](https://discord.com/api/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot) and add it to your server!**
+
+<h1> you want to use on local?</h1>
+
+- intall all the requeriments ```pip3 install -r requirements.txt```
+
+- in the accounts.py file put the bot token, and the emails and passwords
+
+- you have to options run the bot in a container ```docker build -t bot . && docker run -d bot``` or execute the bot ```python3 or python of youre on windows bot.py```
+
