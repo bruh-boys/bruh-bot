@@ -50,7 +50,7 @@ async def email(ctx, arg):
     validateEmail = re.findall("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", arg)
     if not validateEmail:
         embed11 = discord.Embed(
-            title="you didn't pass a valid email, example: *email hello@gmai.com", color=0x00ff01)
+            title="you didn't pass a valid email, example: *email bruh@gmail.com", color=0x00ff01)
         await ctx.send(embed=embed11)
         return
 
