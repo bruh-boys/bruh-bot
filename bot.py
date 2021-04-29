@@ -17,7 +17,8 @@ async def on_ready():
 @bot.command()
 async def info(ctx):
     embed3 = discord.Embed(title="invitation link!",
-                           url="https://discord.com/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot", color=0x00ffff)
+                           url="https://discord.com/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot",
+                           color=0x00ffff)
     embed3.add_field(name="Email example:", value="*email hello@gmail.com")
     embed3.add_field(name="SMS example:", value="*sms +3231231231")
     await ctx.send(embed=embed3)
@@ -29,7 +30,7 @@ async def sms(ctx, arg):
     validate = re.findall("\+?[\d]{10,14}", arg)
     if not validate:
         embed10 = discord.Embed(
-            title="you didn't pass with a +, or is not a number, or did you pass it with spaces, example: *sms +22123456789", color=330000)
+            title="you didn't pass with a +, or is not a number, or did you pass it with spaces, example: *sms +22123456789",color=330000)
         await ctx.send(embed=embed10)
         return
     embed = discord.Embed(title="the spam takes between takes 2 minutes",
