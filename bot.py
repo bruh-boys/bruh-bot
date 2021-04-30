@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='*', description="sms and email spam bot!")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name="*info"))
+    await bot.change_presence(activity=discord.Game(name=f"in {len(bot.guilds)} servers | *info"))
     print("bot on")
 
 
