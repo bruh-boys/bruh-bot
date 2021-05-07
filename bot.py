@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='*', description="sms and email spam bot!")
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game(name=f"in {len(bot.guilds)} servers | *info"))
+    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     print("bot on")
 
 
@@ -41,7 +41,6 @@ async def sms(ctx, arg):
         f"cd quack ; python3 quack --tool SMS --target  {validate[0]} --threads 60 --timeout 90")
     embed2 = discord.Embed(title="sms spam completed! :skull:",
                            color=0x00ff00, timestamp=datetime.datetime.utcnow())
-    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     await ctx.send(embed=embed2)
 
 
@@ -63,7 +62,6 @@ async def email(ctx, arg):
         f"python3 impulse.py --method EMAIL --time 60 --target {validateEmail[0]}")
     embed5 = discord.Embed(title=" email spam completed!",
                            color=0x00ff00, timestamp=datetime.datetime.utcnow())
-    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     await ctx.send(embed=embed5)
 
 
