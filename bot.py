@@ -62,6 +62,7 @@ async def email(ctx, arg):
         f"python3 impulse.py --method EMAIL --time 60 --target {validateEmail[0]}")
     embed5 = discord.Embed(title=" email spam completed!",
                            color=0x00ff00, timestamp=datetime.datetime.utcnow())
+    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     await ctx.send(embed=embed5)
 
 
