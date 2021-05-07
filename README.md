@@ -19,5 +19,5 @@ if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">disc
 
 - in the accounts.py file put the bot token, and the emails and passwords
 
-- you have to options run the bot in a container ```docker build -t bot . && docker run  bot``` or execute the bot ```python3 or python of you're on windows bot.py```
+- you have to options run the bot in a container ```docker build -t bot . && docker run -d bot``` or execute the bot ```python3 or python of you're on windows bot.py```
 
