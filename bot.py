@@ -41,6 +41,7 @@ async def sms(ctx, arg):
         f"cd quack ; python3 quack --tool SMS --target  {validate[0]} --threads 60 --timeout 90")
     embed2 = discord.Embed(title="sms spam completed! :skull:",
                            color=0x00ff00, timestamp=datetime.datetime.utcnow())
+    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     await ctx.send(embed=embed2)
 
 
