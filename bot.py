@@ -1,11 +1,14 @@
 import discord
 from discord.ext import commands
+from discord.flags import Intents
 from accounts import SI  # SI its the token
 import datetime
 import os
 import re
+from discord.ext.commands import cooldown, BucketType
 
-bot = commands.Bot(command_prefix='*', description="sms and email spam bot!")
+bot = commands.Bot(command_prefix='*', intents=discord.Intents.default(),
+                   description="sms and email spam bot!")
 
 
 @bot.event
@@ -24,7 +27,16 @@ async def info(ctx):
     await ctx.send(embed=embed3)
 
 
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CommandOnCooldown):  # checks if is on cooldown
+        em = '**on cooldown**, please try again in {:.2f}s'.format(
+            error.retry_after)
+        await ctx.send(em)
+
+
 @bot.command()
+@commands.cooldown(2, 20, commands.BucketType.user)
 async def sms(ctx, arg):
 
     validate = re.findall("\+?[\d]{10,14}", arg)
@@ -46,6 +58,7 @@ async def sms(ctx, arg):
 
 
 @bot.command()
+@commands.cooldown(2, 20, commands.BucketType.user)
 async def email(ctx, arg):
     validateEmail = re.findall(
         "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", arg)
