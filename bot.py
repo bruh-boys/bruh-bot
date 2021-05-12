@@ -19,6 +19,7 @@ async def on_ready():
 
 @bot.command()
 async def info(ctx):
+    await bot.change_presence(activity=discord.Game(name=f"ready | *info | in {len(bot.guilds)} servers"))
     embed3 = discord.Embed(title="invitation link!",
                            url="https://discord.com/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot",
                            color=0x00ffff)
