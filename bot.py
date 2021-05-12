@@ -37,7 +37,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-@commands.cooldown(2, 20, commands.BucketType.user)
+@commands.cooldown(2, 120, commands.BucketType.user)
 async def sms(ctx, arg):
 
     validate = re.findall("\+?[\d]{10,14}", arg)
@@ -59,7 +59,7 @@ async def sms(ctx, arg):
 
 
 @bot.command()
-@commands.cooldown(2, 20, commands.BucketType.user)
+@commands.cooldown(2, 60, commands.BucketType.user)
 async def email(ctx, arg):
     validateEmail = re.findall(
         "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", arg)
