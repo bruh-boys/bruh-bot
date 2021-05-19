@@ -10,7 +10,7 @@
 
 if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">discord</a>
 
-## 👏 Add bruh-bot to your Discord Server
+## Add bruh-bot to your Discord Server
 **To start using bruh-bot [invitation link!](https://discord.com/api/oauth2/authorize?client_id=817060522067099679&permissions=51200&scope=bot)**
 
 <h1> do you want to use it locally?</h1>
