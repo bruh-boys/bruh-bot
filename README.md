@@ -15,8 +15,12 @@ if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">disc
 
 <h1> do you want to use it locally?</h1>
 
-- intall all the requeriments ```pip3 install -r requirements.txt```
+- install all the requeriments ```pip3 install -r requirements.txt```
 
-- in the accounts.py file put the bot token, and the emails and passwords
+- in the ```accounts.py``` file put the bot token, and the emails and passwords (i recommend all the passwords be the same)
 
-- you have to options run the bot in a container ```sudo docker build -t bot . && sudo docker run -d bot``` or execute the bot ```python3 or python of you're on windows bot.py```
+- you have two options to run the bot in a docker container ```sudo docker build -t bot . && sudo docker run -d bot``` or execute the bot
+
+- windows: ```python bot.py```
+
+- linux/mac: ```python3 bot.py```
