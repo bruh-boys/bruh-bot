@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 from discord.flags import Intents
-from accounts import SI  # SI its the token
+from accounts import TOKEN  # SI its the token
 import datetime
 import os
 import re
@@ -81,4 +81,4 @@ async def email(ctx, arg):
     await ctx.send(embed=embed5)
 
 
-bot.run(SI)
+bot.run(TOKEN)
