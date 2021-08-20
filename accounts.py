@@ -1,6 +1,6 @@
 import random
 
-SI = "" # bot token
+TOKEN = "" # bot token
 
 accounts = [] # email accunts
 
