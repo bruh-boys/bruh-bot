@@ -1,9 +1,3 @@
-tools/EMAIL/sender.json
-__pycache__
-Pipfile
-.vscode
-Pipfile
-Pipfile.lock
-monda.py
+.env
 
 
