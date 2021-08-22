@@ -17,7 +17,7 @@ if you have some problem contact us <a href="https://discord.gg/DPYXzgZQhN">disc
 
 - install all the requeriments ```pip3 install -r requirements.txt```
 
-- in the ```accounts.py``` file put the bot token, and the emails and passwords (i recommend all the passwords be the same)
+- create a .env file and put ```TOKEN=yourbottoken```
 
 - you have two options to run the bot in a docker container ```sudo docker build -t bot . && sudo docker run -d bot```or execute the bot
 
