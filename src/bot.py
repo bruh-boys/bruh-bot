@@ -35,7 +35,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-@commands.cooldown(2, 30, commands.BucketType.user)
+@commands.cooldown(2, 300, commands.BucketType.user)
 async def sms(ctx, arg):
 
     sms_request = requests.post(f'{api}/sms',
@@ -61,7 +61,7 @@ async def help(ctx):
 
 
 @bot.command()
-@commands.cooldown(2, 30, commands.BucketType.user)
+@commands.cooldown(2, 300, commands.BucketType.user)
 async def email(ctx, arg):
     email_request = requests.post(f'{api}/email',
                                   json={"email": arg})
