@@ -68,6 +68,7 @@ async def email(ctx, arg):
     embed_email = discord.Embed(title="Email spam!", color=0xa6b4e3)
     embed_email.add_field(name="Api response:", value=email_request.text)
     await ctx.send(embed=embed_email)
+    await ctx.send("This command is under maintenance, More info in https://github.com/bruh-boys/api-bruh-bot")
 
 
 bot.run(token)
