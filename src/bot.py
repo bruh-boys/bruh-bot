@@ -35,7 +35,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-@commands.cooldown(2, 30, commands.BucketType.user)
+@commands.cooldown(2, 300, commands.BucketType.user)
 async def sms(ctx, arg):
 
     sms_request = requests.post(f'{api}/sms',
@@ -61,13 +61,14 @@ async def help(ctx):
 
 
 @bot.command()
-@commands.cooldown(2, 30, commands.BucketType.user)
+@commands.cooldown(2, 300, commands.BucketType.user)
 async def email(ctx, arg):
     email_request = requests.post(f'{api}/email',
                                   json={"email": arg})
     embed_email = discord.Embed(title="Email spam!", color=0xa6b4e3)
     embed_email.add_field(name="Api response:", value=email_request.text)
     await ctx.send(embed=embed_email)
+    await ctx.send("This command is under maintenance, More info in https://github.com/bruh-boys/api-bruh-bot")
 
 
 bot.run(token)
